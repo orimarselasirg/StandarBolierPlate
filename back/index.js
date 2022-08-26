@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require("cors")
 const { sequelize } = require('./db/db')
 const app = express()
+const test = require('./routes/test')
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }))
 app.use(cors())
@@ -13,12 +14,4 @@ app.listen(port, () => {
 })
 
 
-app.get('/test', async (req, res) => {
-    try {
-    console.log('ok')
-    res.status(200).json('sucessful')      
-    } catch (error) {
-        console.log(error)
-        res.status(401).json(error.message)
-    }
-})
+app.use('/', test)

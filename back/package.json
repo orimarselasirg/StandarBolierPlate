@@ -1,7 +1,7 @@
 {
   "name": "back",
   "version": "1.0.0",
-  "description": "cronometer",
+  "description": "App",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -26,6 +26,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/orimarselasirg/scheduleVehicle.git"
+    "url": "git+https://github.com/orimarselasirg/StandarBolierPlate"
   }
 }
